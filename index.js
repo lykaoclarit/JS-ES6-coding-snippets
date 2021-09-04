@@ -88,3 +88,15 @@ function calcChange(startingMoney, costPerBottle){
 }
 
 console.log("Here is your " + getDrink(5, 1.5) + " change.");
+
+//BMI calculator 
+
+function bmiCalculator(weight,height){
+    var bmi = weight / (height*height);
+return calcRoundUp(bmi);
+}
+
+function calcRoundUp(bmi){
+    var rounded = Math.round(bmi);
+    return rounded;
+}
