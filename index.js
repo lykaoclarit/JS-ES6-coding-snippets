@@ -92,7 +92,7 @@ console.log("Here is your " + getDrink(5, 1.5) + " change.");
 //BMI calculator 
 
 function bmiCalculator(weight,height){
-    var bmi = weight / (height*height);
+    var bmi = weight / Math.pow(height,2);
 return calcRoundUp(bmi);
 }
 
