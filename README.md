@@ -1,6 +1,6 @@
 # JS-ES6-coding-snippets
 
-JS ES6 Introduction 
+JS ES6 Introduction - the basics
 Simple coding snippets like:
 - making an alert box
 - prompt, slice, char-casing manipulation
