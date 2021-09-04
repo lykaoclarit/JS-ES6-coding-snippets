@@ -40,3 +40,51 @@ var bottleCost = money / 5;
 }
 
 getDrink(15);
+
+
+//life in weeks - where user can input there actual age
+// and age is defined as the year person gets to live  
+function lifeInWeeks(age){
+    var ageToday = prompt("How old are you?");
+    var remainingTime = age - ageToday;
+
+    var x = 365;
+    var y = 52;
+    var z = 12;
+
+console.log("You have " + x*remainingTime +" days, " + y*remainingTime + " weeks," + " and " + z*remainingTime + " months left." );
+}
+
+lifeInWeeks(90);
+
+//other solution with pre-defined current age
+
+function lifeInWeeks(age){
+    var remainingTime = 90 - age;
+
+    var x = 365;
+    var y = 52;
+    var z = 12;
+
+console.log("You have " + x*remainingTime +" days, " + y*remainingTime + " weeks," + " and " + z*remainingTime + " months left." );
+
+}
+
+lifeInWeeks(22);
+
+//function - outputs and return values
+function getDrink(money,costPerBottle) {   
+  console.log("Buy " + calcBottles(money,costPerBottle) + " bottles of milk.");
+return calcChange(money, 1.5);
+}
+
+function calcBottles(startingMoney, costPerBottle){
+    var numberOfBottles = Math.floor(startingMoney/costPerBottle);
+    return numberOfBottles;
+}
+function calcChange(startingMoney, costPerBottle){
+   var change = startingMoney % costPerBottle;
+   return change;  
+}
+
+console.log("Here is your " + getDrink(5, 1.5) + " change.");
